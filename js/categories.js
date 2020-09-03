@@ -46,7 +46,7 @@ function showCategoriesList(){
 
             htmlContentToAppend += `
             <a href="category-info.html" class="list-group-item list-group-item-action">
-                <div class="row">
+                <div class="row shadow p-3 mb-5 bg-white rounded">
                     <div class="col-3">
                         <img src="` + category.imgSrc + `" alt="` + category.description + `" class="img-thumbnail">
                     </div>
