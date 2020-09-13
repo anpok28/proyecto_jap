@@ -37,34 +37,55 @@
 
       
       <div class="row">
-        <div class="list-group" id="prod-info-name">
-          
+        <h3 id="prod-info-name"></h3>
+      <dl>
+        <dt>Descripción</dt>
+        <dd>
+          <p id="prod-info-description"></p>
+        </dd>
+        <dt>Categoría</dt>
+        <dd>
+          <p id="prod-info-category"></p>
+        </dd>
+        <dt>Cantidad de productos (Stock)</dt>
+        <dd>
+          <p id="prod-info-soldCount"></p>
+        </dd>  
+        <dt> Precio</dt>
+        <dd>
+          <p id="prod-info-currency"></p>    
+        </dd>
+        <dd>
+          <p id="prod-info-cost"></p>
+        </dd> 
         </div>
+        <dt>Galeria Imagenes</dt>
+      <dd>
+        <div class="row text-center text-lg-left pt-2" id="prod-info-images">
+        </div>
+      </dd>
+    </dl>
+    <a type="button" class="btn btn-light btn-lg btn-block" href="products.html">Ver productos</a>
+        
 
-
-
-    
-
-
-      
-  
-
-
-
-
-
-
-
-
-
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-right">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    <div class="container mt-5">
+      <h2>Comentarios</h2>
+      <div class="my-rating"></div>
+      <div class="row text-center text-lg-left pt-2" id="productComments"></div>
     </div>
+    <div>
+      <textarea style="margin-top: 5px" class="form-control" rows="3" id="comment" placeholder="Escribir aqui su comentario "></textarea>
+      <button onclick="result()" type="button" style="margin-top: 10px; margin-left: 5px" class="btn btn-lg btn-success">Enviar</button>
+    </div>
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Volver arriba</a>
+        </p>
+        <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+        <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+      </div>
+
   </footer>
   <div id="spinner-wrapper">
     <div class="lds-ring">
